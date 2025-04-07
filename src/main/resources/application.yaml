@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: b60-cards-api
+  profiles:
+    active: local
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      authentication-database: admin
+      username: b60-erick
+      password: eE7hTJ1M6b8wPZFi@qGKo44Z83nZ
+      database: b60_cards_db
